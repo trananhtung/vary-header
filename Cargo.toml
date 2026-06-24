@@ -1,0 +1,25 @@
+[package]
+name = "vary-header"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.81"
+description = "Append field names to an HTTP Vary header correctly (dedup, case-insensitive, '*' handling). A faithful port of the vary npm package. Zero dependencies, no_std."
+documentation = "https://docs.rs/vary-header"
+repository = "https://github.com/trananhtung/vary-header"
+homepage = "https://github.com/trananhtung/vary-header"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+keywords = ["vary", "http", "header", "cache", "cors"]
+categories = ["web-programming", "no-std"]
+authors = ["trananhtung"]
+exclude = ["/.github", "/.gitignore"]
+
+[dependencies]
+
+[lints.rust]
+missing_docs = "warn"
+unsafe_code = "forbid"
+
+[lints.clippy]
+all = "warn"
+pedantic = "warn"
